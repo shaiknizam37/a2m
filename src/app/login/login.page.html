@@ -9,16 +9,19 @@
   <ion-card>
   <ion-img src="../../assets/images/2.jpeg"></ion-img>
   </ion-card>
-  <form #form="ngForm"  novalidate>
+  <form #userlogin="ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
     <ion-item>
-      <ion-label position="floating">Username</ion-label>
-      <ion-input></ion-input>
+      <ion-label position="floating">Mobile No.</ion-label>
+      <ion-input type="number" name = "mobile"  (ionFocus)="onFocus()" ngModel></ion-input>
     </ion-item>
+    <ion-label [hidden]="usrmsg.valid" padding color="danger">Enter Username</ion-label>
     <ion-item>
       <ion-label position="floating">Password</ion-label>
-      <ion-input></ion-input>
+      <ion-input type="password" name = "password" (ionFocus)="onFocus()" ngModel></ion-input>
     </ion-item>
+    <ion-label padding color="danger" [hidden]="pwdmsg.valid">Enter Password</ion-label>
       <br>
-    <ion-button expand="block" fill="outline" type="submit">Login</ion-button>
+      <ion-button expand="block" fill="outline" type="submit">Login</ion-button>
+    <ion-button expand="block" fill="outline" href="/home">Home</ion-button>
       </form>
 </ion-content>
