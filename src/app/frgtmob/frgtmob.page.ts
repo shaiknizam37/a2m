@@ -9,7 +9,7 @@ import { FormControl, FormGroup, Validators,ValidatorFn,AbstractControl } from '
 })
 export class FrgtmobPage implements OnInit {
 
-  constructor(private _http:Http) { }
+  constructor() { }
 
   ngOnInit() {
 
