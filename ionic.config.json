@@ -1,5 +1,7 @@
 {
   "name": "A2M",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
