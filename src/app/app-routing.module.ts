@@ -18,7 +18,9 @@ const routes: Routes = [
   {
     path: 'login',
     loadChildren: './login/login.module#LoginPageModule'
-  }
+  },
+  { path: 'frgtmob', loadChildren: './frgtmob/frgtmob.module#FrgtmobPageModule' },
+  { path: 'otppwd', loadChildren: './otppwd/otppwd.module#OtppwdPageModule' }
 ];
 
 @NgModule({
