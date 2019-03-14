@@ -6,7 +6,7 @@
 
 <ion-content padding style="background-image:url(../../assets/images/1.jpg);">
   <!-- <ion-img src="../../assets/images/1.jpg"></ion-img>-->
-  <ion-card>
+  <ion-card routerLink="/home">
   <ion-img src="../../assets/images/2.jpeg"></ion-img>
   </ion-card>
   <form #userlogin="ngForm" (ngSubmit) = "onClickSubmit(userlogin.value)">
@@ -23,6 +23,6 @@
       <br>
     <ion-button expand="block" fill="outline" type="submit">Login</ion-button>
     <br>
-    <ion-button expand="block" fill="outline" href="/frgtmob">Forgot?</ion-button>
+    <ion-button expand="block" fill="outline" routerLink="/frgtmob">Forgot?</ion-button>
       </form>
 </ion-content>
